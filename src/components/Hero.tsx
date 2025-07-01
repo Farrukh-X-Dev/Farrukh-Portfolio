@@ -71,7 +71,7 @@ const Hero = () => {
                 href="https://github.com/Farrukh-X-Dev/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 transform hover:scale-110"
+                className="w-12 h-12 rounded-full bg-muted flex items-center justify-center hover:bg-gray-700 hover:text-white transition-all duration-300 transform hover:scale-110"
               >
                 <Github size={20} />
               </a>
@@ -79,7 +79,7 @@ const Hero = () => {
                 href="#"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 transform hover:scale-110"
+                className="w-12 h-12 rounded-full bg-muted flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:scale-110"
               >
                 <Linkedin size={20} />
               </a>
