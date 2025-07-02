@@ -77,7 +77,7 @@ const About = () => {
                   <div className="flex items-center justify-between mb-3">
                     <h4 className="font-semibold text-lg">{cert.name}</h4>
                     <span className="bg-primary text-white px-3 py-1 rounded-full text-sm font-medium">
-                      {cert.count} cert{cert.count > 1 ? 's' : ''}
+                      {cert.count} certificate{cert.count > 1 ? 's' : ''}
                     </span>
                   </div>
                   <p className="text-muted-foreground">{cert.provider}</p>

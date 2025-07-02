@@ -45,11 +45,11 @@ const Skills = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="flex flex-wrap justify-center gap-8">
           {skills.map((skill, index) => (
             <div 
               key={skill.name}
-              className={`bg-card border border-border rounded-xl p-8 card-hover fade-in-up stagger-${index + 1}`}
+              className={`w-full md:w-[48%] lg:w-[30%] bg-card border border-border rounded-xl p-8 card-hover fade-in-up stagger-${index + 1}`}
             >
               <div className="text-center">
                 <div className="text-4xl mb-4">{skill.icon}</div>

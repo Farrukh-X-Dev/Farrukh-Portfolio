@@ -33,7 +33,7 @@ const Hero = () => {
             
             <div className="fade-in-up stagger-1">
               <h2 className="text-2xl lg:text-3xl text-muted-foreground mb-6 font-light">
-                Creative Front-End Developer |{' '}
+                 Front-End Developer |{' '}
                 <span className="text-primary">Passionate Learner</span> |{' '}
                 <span className="text-orange-500">Problem Solver</span>
               </h2>
@@ -41,9 +41,9 @@ const Hero = () => {
 
             <div className="fade-in-up stagger-2">
               <p className="text-lg text-muted-foreground mb-8 max-w-2xl">
-                A creative and hardworking student passionate about digital website development. 
-                I'm eager to apply my front-end development knowledge and strong communication skills 
-                to help clients build clean, effective web experiences.
+                A creative and hardworking teenager passionate about digital website development. 
+                I'm eager to apply my development knowledge and strong communication skills 
+                to help clients and companies build clean and effective web experiences.
               </p>
             </div>
 
@@ -53,7 +53,7 @@ const Hero = () => {
                 onClick={() => scrollToSection('#projects')}
                 className="gradient-primary text-white px-8 py-4 rounded-full font-medium hover:shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-2"
               >
-                View Portfolio
+                View Projects
                 <ArrowRight size={20} />
               </button>
               <button
@@ -71,15 +71,15 @@ const Hero = () => {
                 href="https://github.com/Farrukh-X-Dev/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 rounded-full bg-muted flex items-center justify-center hover:bg-gray-700 hover:text-white transition-all duration-300 transform hover:scale-110"
+                className="w-12 h-12 rounded-full bg-muted flex items-center justify-center hover:bg-gray-500 hover:text-white transition-all duration-300 transform hover:scale-110"
               >
                 <Github size={20} />
               </a>
               <a
-                href="#"
+                href="https://www.linkedin.com/in/farrukh-noman/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 rounded-full bg-muted flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:scale-110"
+                className="w-12 h-12 rounded-full bg-muted flex items-center justify-center hover:bg-blue-500 hover:text-white transition-all duration-300 transform hover:scale-110"
               >
                 <Linkedin size={20} />
               </a>
@@ -90,10 +90,10 @@ const Hero = () => {
           <div className="lg:w-1/2 flex justify-center">
             <div className="fade-in-up stagger-2">
               <div className="relative">
-                <div className="w-80 h-80 rounded-full gradient-primary p-1">
+                <div className="w-82 h-82 rounded-full gradient-primary p-1">
                   <div className="w-full h-full rounded-full bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
-                    <div className="w-72 h-72 rounded-full bg-gradient-to-br from-gray-700 to-gray-800 flex items-center justify-center text-6xl font-bold text-gradient">
-                      FN
+                    <div className="w-80 h-80 rounded-full bg-gradient-to-br from-gray-700 to-gray-800 flex items-center justify-center text-6xl font-bold text-gradient">
+                      <img src='Headshot.jpeg' alt="FN" className='object-cover object-[center_25%] w-full h-full rounded-full '/>
                     </div>
                   </div>
                 </div>

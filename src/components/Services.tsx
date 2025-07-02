@@ -71,29 +71,7 @@ const Services = () => {
             </div>
           ))}
         </div>
-
-        <div className="mt-16 text-center">
-          <div className="bg-gradient-to-r from-primary/10 to-orange-500/10 rounded-xl p-8 border border-primary/20">
-            <h3 className="text-2xl font-bold mb-4">
-              Ready to start your project?
-            </h3>
-            <p className="text-muted-foreground text-lg mb-6">
-              Let's work together to create something amazing that stands out from the crowd.
-            </p>
-            <button 
-              onClick={() => {
-                const element = document.querySelector('#contact');
-                if (element) {
-                  element.scrollIntoView({ behavior: 'smooth' });
-                }
-              }}
-              className="gradient-primary text-white px-8 py-4 rounded-full font-medium hover:shadow-lg transition-all duration-300 transform hover:scale-105"
-            >
-              Get In Touch
-            </button>
-          </div>
-        </div>
-      </div>
+     </div>
     </section>
   );
 };

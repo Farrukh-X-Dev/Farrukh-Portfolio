@@ -5,27 +5,27 @@ const Projects = () => {
   const projects = [
     {
       title: 'Employee Management System',
-      description: 'A comprehensive task management system designed for admins and employees to streamline workflow and productivity.',
+      description: 'A comprehensive task management system designed for admins and employees to assign tasks and streamline workflow and productivity.',
       image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop&crop=center',
-      tags: ['React', 'JavaScript', 'CSS', 'Local Storage'],
-      github: 'https://github.com/Farrukh-X-Dev/',
-      demo: '#'
+      tags: ['React', 'Tailwind CSS' ,'JavaScript', 'Local and Session Storage'],
+      github: 'https://github.com/Farrukh-X-Dev/Employees-Management-System',
+      demo: 'https://tasks-assigning.netlify.app/'
     },
     {
       title: 'Restaurant Billing App',
       description: 'Real-time billing application for restaurants to generate customer receipts with dynamic pricing and order management.',
       image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&h=300&fit=crop&crop=center',
-      tags: ['HTML', 'CSS', 'JavaScript', 'DOM Manipulation'],
-      github: 'https://github.com/Farrukh-X-Dev/',
-      demo: '#'
+      tags: ['React', 'Tailwind CSS', 'JavaScript', 'DOM Manipulation'],
+      github: 'https://github.com/Farrukh-X-Dev/Billing-App',
+      demo: 'https://billingreceipt.netlify.app/'
     },
     {
       title: 'Interactive Quiz App',
       description: 'Fun and educational quiz application tailored for 3 different age groups of children with engaging UI and scoring system.',
       image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=500&h=300&fit=crop&crop=center',
       tags: ['React', 'Tailwind CSS', 'JavaScript', 'Responsive Design'],
-      github: 'https://github.com/Farrukh-X-Dev/',
-      demo: '#'
+      github: 'https://github.com/Farrukh-X-Dev/Quizz-App-for-Kids',
+      demo: 'https://quizzforkids.netlify.app/'
     }
   ];
 
@@ -117,7 +117,7 @@ const Projects = () => {
             className="inline-flex items-center gap-2 border-2 border-primary text-primary px-8 py-4 rounded-full font-medium hover:bg-primary hover:text-white transition-all duration-300 transform hover:scale-105"
           >
             <Github size={20} />
-            View All on GitHub
+            View 9 more on GitHub
           </a>
         </div>
       </div>

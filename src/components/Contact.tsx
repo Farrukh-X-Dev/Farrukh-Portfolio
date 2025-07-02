@@ -86,7 +86,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Email</h4>
-                  <p className="text-muted-foreground">farrukhnoman@email.com</p>
+                  <p className="text-muted-foreground">m.farrukhnoman@gmail.com</p>
                 </div>
               </div>
 
@@ -96,7 +96,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold mb-1">Phone</h4>
-                  <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                  <p className="text-muted-foreground">+92 310-34935-29</p>
                 </div>
               </div>
 
@@ -119,7 +119,7 @@ const Contact = () => {
                   href="https://github.com/Farrukh-X-Dev/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-12 h-12 rounded-full bg-muted flex items-center justify-center hover:bg-gray-700 hover:text-white transition-all duration-300 transform hover:scale-110"
+                  className="w-12 h-12 rounded-full bg-muted flex items-center justify-center hover:bg-gray-500 hover:text-white transition-all duration-300 transform hover:scale-110"
                 >
                   <Github size={20} />
                 </a>
