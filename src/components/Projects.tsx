@@ -41,7 +41,7 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div 
               key={project.title}
@@ -60,11 +60,13 @@ const Projects = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center hover:bg-white/30 transition-colors"
-                    >
+                      >
                       <Github size={18} className="text-white" />
                     </a>
                     <a 
                       href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="w-10 h-10 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center hover:bg-white/30 transition-colors"
                     >
                       <ExternalLink size={18} className="text-white" />
@@ -99,6 +101,8 @@ const Projects = () => {
                   </a>
                   <a 
                     href={project.demo}
+                    rel="noopener noreferrer"
+                    target='_blank'
                     className="flex-1 gradient-primary text-white text-center py-2 rounded-lg font-medium hover:shadow-lg transition-all duration-300"
                   >
                     Live Demo

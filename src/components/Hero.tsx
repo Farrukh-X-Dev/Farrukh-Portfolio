@@ -1,5 +1,6 @@
 
 import { ArrowRight, Download, Github, Linkedin } from 'lucide-react';
+import image from '../assets/Headshot.jpeg'
 
 const Hero = () => {
   const scrollToSection = (href: string) => {
@@ -93,7 +94,7 @@ const Hero = () => {
                 <div className="w-82 h-82 rounded-full gradient-primary p-1">
                   <div className="w-full h-full rounded-full bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
                     <div className="w-80 h-80 rounded-full bg-gradient-to-br from-gray-700 to-gray-800 flex items-center justify-center text-6xl font-bold text-gradient">
-                      <img src='Headshot.jpeg' alt="FN" className='object-cover object-[center_25%] w-full h-full rounded-full '/>
+                      <img src={image} alt="FN" className='object-cover object-[center_25%] w-full h-full rounded-full '/>
                     </div>
                   </div>
                 </div>
