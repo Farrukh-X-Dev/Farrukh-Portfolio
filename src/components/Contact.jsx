@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { Mail, MapPin, Phone, Send, Github, Linkedin } from 'lucide-react';
 import emailjs from '@emailjs/browser';
-import { useToast } from "@/hooks/use-toast";
+import { toast } from "sonner";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -11,7 +11,6 @@ const Contact = () => {
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const { toast } = useToast();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -30,8 +29,7 @@ const Contact = () => {
         'E4M62-A3MaowwIkjq' // Your Public Key
       );
 
-      toast({
-        title: "Message sent successfully!",
+      toast.success("Message sent successfully!", {
         description: "Thank you for your message. I'll get back to you soon.",
       });
 
@@ -39,9 +37,7 @@ const Contact = () => {
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
       console.error('EmailJS Error:', error);
-      toast({
-        variant: "destructive",
-        title: "Failed to send message",
+      toast.error("Failed to send message", {
         description: "Please try again later or contact me directly via email.",
       });
     } finally {
