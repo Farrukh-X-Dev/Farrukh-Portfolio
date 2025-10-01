@@ -117,3 +117,26 @@ All colors MUST be HSL.
   .stagger-4 { animation-delay: 0.4s; }
   .stagger-5 { animation-delay: 0.5s; }
 }
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, hsl(0, 72%, 51%) 0%, hsl(25, 95%, 53%) 100%);
+  border-radius: 12px;
+  border: 2px solid #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, hsl(0, 72%, 61%) 0%, hsl(25, 95%, 63%) 100%);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(0, 72%, 51%) #1a1a1a;
+}

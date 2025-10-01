@@ -1,8 +1,15 @@
-
 import { useState } from 'react';
 import { Mail, MapPin, Phone, Send, Github, Linkedin } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 import { toast } from "sonner";
+import { motion } from "framer-motion";
+
+const fadeUp = (delay = 0) => ({
+  initial: { opacity: 0, y: 30 },
+  whileInView: { opacity: 1, y: 0 },
+  transition: { duration: 0.6, delay },
+  viewport: { once: false }, // animation replays when you scroll back
+});
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -33,7 +40,6 @@ const Contact = () => {
         description: "Thank you for your message. I'll get back to you soon.",
       });
 
-      // Reset form
       setFormData({ name: '', email: '', message: '' });
     } catch (error) {
       console.error('EmailJS Error:', error);
@@ -55,84 +61,84 @@ const Contact = () => {
   return (
     <section id="contact" className="py-20 bg-muted/20">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        {/* Title */}
+        <motion.div {...fadeUp(0)} className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
             Get In <span className="text-gradient">Touch</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Ready to bring your ideas to life? Let's collaborate and create something amazing together.
           </p>
-        </div>
+        </motion.div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* Contact Info */}
+          {/* Left Side */}
           <div className="space-y-8">
-            <div className="fade-in-up">
+            <motion.div {...fadeUp(0.1)}>
               <h3 className="text-2xl font-bold mb-6">Let's Connect</h3>
               <p className="text-muted-foreground text-lg mb-8">
                 I'm always excited to discuss new projects and opportunities. 
                 Whether you have a question or just want to say hi, I'll do my best to get back to you!
               </p>
-            </div>
+            </motion.div>
 
-            <div className="space-y-6">
-              <div className="fade-in-up stagger-1 flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full gradient-primary flex items-center justify-center">
-                  <Mail className="text-white" size={20} />
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-1">Email</h4>
-                  <p className="text-muted-foreground">m.farrukhnoman@gmail.com</p>
-                </div>
+            {/* Contact Info */}
+            <motion.div {...fadeUp(0.2)} className="flex items-center gap-4">
+              <div className="w-12 h-12 rounded-full gradient-primary flex items-center justify-center">
+                <Mail className="text-white" size={20} />
               </div>
+              <div>
+                <h4 className="font-semibold mb-1">Email</h4>
+                <p className="text-muted-foreground">m.farrukhnoman@gmail.com</p>
+              </div>
+            </motion.div>
 
-              <div className="fade-in-up stagger-2 flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full gradient-primary flex items-center justify-center">
-                  <Phone className="text-white" size={20} />
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-1">Phone</h4>
-                  <p className="text-muted-foreground">+92 310-34935-29</p>
-                </div>
+            <motion.div {...fadeUp(0.3)} className="flex items-center gap-4">
+              <div className="w-12 h-12 rounded-full gradient-primary flex items-center justify-center">
+                <Phone className="text-white" size={20} />
               </div>
+              <div>
+                <h4 className="font-semibold mb-1">Phone</h4>
+                <p className="text-muted-foreground">+92 310-3493529</p>
+              </div>
+            </motion.div>
 
-              <div className="fade-in-up stagger-3 flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full gradient-primary flex items-center justify-center">
-                  <MapPin className="text-white" size={20} />
-                </div>
-                <div>
-                  <h4 className="font-semibold mb-1">Location</h4>
-                  <p className="text-muted-foreground">Available for remote work</p>
-                </div>
+            <motion.div {...fadeUp(0.4)} className="flex items-center gap-4">
+              <div className="w-12 h-12 rounded-full gradient-primary flex items-center justify-center">
+                <MapPin className="text-white" size={20} />
               </div>
-            </div>
+              <div>
+                <h4 className="font-semibold mb-1">Location</h4>
+                <p className="text-muted-foreground">Available for remote work</p>
+              </div>
+            </motion.div>
 
             {/* Social Links */}
-            <div className="fade-in-up stagger-4">
+            <motion.div {...fadeUp(0.5)}>
               <h4 className="font-semibold mb-4">Follow Me</h4>
               <div className="flex gap-4">
                 <a
                   href="https://github.com/Farrukh-X-Dev/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-12 h-12 rounded-full bg-muted flex items-center justify-center hover:bg-gray-500 hover:text-white transition-all duration-300 transform hover:scale-110"
+                  className="w-12 h-12 rounded-full bg-muted flex items-center justify-center hover:gradient-primary transition-all duration-300 transform hover:scale-110"
                 >
                   <Github size={20} />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/farrukh-noman/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-12 h-12 rounded-full bg-muted flex items-center justify-center hover:bg-blue-600 hover:text-white transition-all duration-300 transform hover:scale-110"
+                  className="w-12 h-12 rounded-full bg-muted flex items-center justify-center hover:gradient-primary transition-all duration-300 transform hover:scale-110"
                 >
                   <Linkedin size={20} />
                 </a>
               </div>
-            </div>
+            </motion.div>
           </div>
 
           {/* Contact Form */}
-          <div className="fade-in-up stagger-2">
+          <motion.div {...fadeUp(0.6)}>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2">
@@ -146,7 +152,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   disabled={isSubmitting}
-                  className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
                   placeholder="Enter your full name"
                 />
               </div>
@@ -163,7 +169,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   disabled={isSubmitting}
-                  className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
                   placeholder="Enter your email address"
                 />
               </div>
@@ -180,7 +186,7 @@ const Contact = () => {
                   required
                   disabled={isSubmitting}
                   rows={6}
-                  className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent resize-none transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full px-4 py-3 bg-card border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary resize-none transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
                   placeholder="Tell me about your project..."
                 />
               </div>
@@ -203,7 +209,7 @@ const Contact = () => {
                 )}
               </button>
             </form>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
