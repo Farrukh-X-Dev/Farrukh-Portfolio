@@ -3,7 +3,7 @@
 A modern, fully responsive **personal portfolio website** built with **React, Tailwind CSS, and Framer Motion**.  
 It showcases skills, services, and projects with **smooth scroll-based animations** and a lightweight, clean design.
 
-🔗 **Live Demo:** https://farrukh-portfolio-01.vercel.app/
+🔗 **Live Demo:** https://dev-farrukh.netlify.app/
 
 ---
 
@@ -34,7 +34,7 @@ It showcases skills, services, and projects with **smooth scroll-based animation
 
 **Farrukh Noman**
 
-- 🌐 **Portfolio:** [farrukh-portfolio-01.vercel.app](https://farrukh-portfolio-01.vercel.app/)  
+- 🌐 **Portfolio:** [farrukh-portfolio-01.vercel.app](https://dev-farrukh.netlify.app/)  
 - 📧 **Email:** [m.farrukhnoman@gmail.com](mailto:m.farrukhnoman@gmail.com)  
 - 💼 **LinkedIn:** [linkedin.com/in/farrukh-noman](https://www.linkedin.com/in/farrukh-noman/)  
 - 🖥️ **GitHub:** [Farrukh-X-Dev](https://github.com/Farrukh-X-Dev)  
