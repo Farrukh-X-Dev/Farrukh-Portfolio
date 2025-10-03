@@ -23,7 +23,7 @@ It showcases skills, services, and projects with **smooth scroll-based animation
 
 - **Frontend:** React, Vite  
 - **Styling:** Tailwind CSS  
-- **Animations:** Framer Motion, Intersection Observer
+- **Animations:** Framer Motion
 - **Icons:** React Icons  
 - **Deployment:** Vercel
 
@@ -36,7 +36,7 @@ It showcases skills, services, and projects with **smooth scroll-based animation
 
 - 🌐 **Portfolio:** [farrukh-portfolio-01.vercel.app](https://dev-farrukh.netlify.app/)  
 - 📧 **Email:** [m.farrukhnoman@gmail.com](mailto:m.farrukhnoman@gmail.com)  
-- 💼 **LinkedIn:** [linkedin.com/in/farrukh-noman](https://www.linkedin.com/in/farrukh-noman/)  
+- 💼 **LinkedIn:** [linkedin.com/in/dev-farrukh](https://www.linkedin.com/in/dev-farrukh/)  
 - 🖥️ **GitHub:** [Farrukh-X-Dev](https://github.com/Farrukh-X-Dev)  
 
 ⭐ If you like this project, please give it a star on GitHub — it helps a lot!
